@@ -9,11 +9,12 @@ namespace gbAlgorithms
     /// <summary>
     /// Implement fuction to calculate Fibonacci number 
     /// </summary>
-    internal class Lesson1Task2
+    internal class Lesson1Task2: Task
     {
         public int Number { get; set; }
         public Lesson1Task2()
         {
+            Description = "Task2. Find Fibonacci number";
             Number = 0;
         }
 
