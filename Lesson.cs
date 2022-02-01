@@ -10,10 +10,22 @@ namespace gbAlgorithms
     {
         public List<Task> tasks;
         public string Description { get; set; }
-        public Lesson(string description)
+        public Lesson()
         {
             tasks = new List<Task>();
-            Description = description;
+        }
+
+        public void TasksMenu()
+        {
+            foreach (var task in tasks)
+            {
+                Console.WriteLine(task.Description);
+            }
+        }
+
+        public virtual void runTask(int taskNumber)
+        {
+            
         }
     }
 }
