@@ -9,7 +9,7 @@ namespace gbAlgorithms
     /// <summary>
     /// Check if the number is prime
     /// </summary>
-    internal class Lesson1Task1: Task
+    internal class Lesson1Task1 : Task
     {
         public int Number { get; set; }
         public Lesson1Task1()
@@ -17,12 +17,12 @@ namespace gbAlgorithms
             Description = "Task1. Check if the number is prime";
             Number = 0;
         }
-        private bool isPrime(int number)
+        private bool IsPrime(int number)
         {
             Number = number;
             int d = 0;
             int i = 2;
-            while(i < Number)
+            while (i < Number)
             {
                 if (Number % i == 0)
                 {
@@ -40,10 +40,10 @@ namespace gbAlgorithms
             }
         }
 
-        public void getNumber()
+        public void GetNumber()
         {
             Console.WriteLine("Enter the number to check if it is prime:");
-            if (isPrime(Int32.Parse(Console.ReadLine())) == true)
+            if (IsPrime(Int32.Parse(Console.ReadLine())) == true)
             {
                 Console.WriteLine($"Number {Number} is prime number\n");
             }
@@ -53,9 +53,9 @@ namespace gbAlgorithms
             }
         }
 
-        public void checkIsPrimePositiveTest()
+        public void CheckIsPrimePositiveTest()
         {
-            if (isPrime(23) == true)
+            if (IsPrime(23) == true)
             {
                 Console.WriteLine("Positive test passed\n");
             }
@@ -65,9 +65,9 @@ namespace gbAlgorithms
             }
         }
 
-        public void checkIsPrimeNegativeTest()
+        public void CheckIsPrimeNegativeTest()
         {
-            if (isPrime(0) == false)
+            if (IsPrime(0) == false)
             {
                 Console.WriteLine("Negative test passed\n");
             }

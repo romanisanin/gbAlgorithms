@@ -9,7 +9,7 @@ namespace gbAlgorithms
     /// <summary>
     /// Implement fuction to calculate Fibonacci number 
     /// </summary>
-    internal class Lesson1Task2: Task
+    public class Lesson1Task2 : Task
     {
         public int Number { get; set; }
         public Lesson1Task2()
@@ -26,7 +26,7 @@ namespace gbAlgorithms
 
         public int GetFibonacci(int number)
         {
-            Number  = number;
+            Number = number;
             int[] Fib = new int[Number + 1];
             Fib[0] = 0;
             Fib[1] = 1;
