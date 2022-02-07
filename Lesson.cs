@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace gbAlgorithms
 {
-    internal class Lesson
+    public class Lesson
     {
-        public List<Task> tasks;
+        public List<Task> Tasks;
         public string Description { get; set; }
         public Lesson()
         {
-            tasks = new List<Task>();
+            Tasks = new List<Task>();
         }
 
         public void TasksMenu()
         {
-            foreach (var task in tasks)
+            foreach (var task in Tasks)
             {
                 Console.WriteLine(task.Description);
             }
         }
 
-        public virtual void runTask(int taskNumber)
+        public virtual void RunTask(int taskNumber)
         {
-            
+
         }
     }
 }

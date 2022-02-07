@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 namespace gbAlgorithms
 {
-    internal class Task
+    public class Task
     {
         public string Description { get; set;}
         public Task()
