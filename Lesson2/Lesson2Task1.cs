@@ -12,7 +12,7 @@ namespace gbAlgorithms
 
         public Lesson2Task1()
         {
-            Description = "Task1. Doubly Linked List";
+            Description = "Task 1. Doubly Linked List";
         }
 
         public void PrintLinkedList()

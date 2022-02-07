@@ -12,7 +12,7 @@ namespace gbAlgorithms
         Lesson2Task1 Task1 = new Lesson2Task1();
         public Lesson2()
         {
-            Description = "Lesson2. Array, List, Search";
+            Description = "Lesson 2. Array, List, Search";
             Tasks = new List<Task>();
 
             Tasks.Add(Task1);

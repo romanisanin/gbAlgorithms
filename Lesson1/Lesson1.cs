@@ -8,12 +8,11 @@ namespace gbAlgorithms
 {
     public class Lesson1 : Lesson
     {
-
         Lesson1Task1 Task1 = new Lesson1Task1();
         Lesson1Task2 Task2 = new Lesson1Task2();
         public Lesson1()
         {
-            Description = "Lesson1. Block diagrams, asymptotic complexity, recursion";
+            Description = "Lesson 1. Block diagrams, asymptotic complexity, recursion";
             Tasks = new List<Task>();
 
             Tasks.Add(Task1);

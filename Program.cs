@@ -3,10 +3,9 @@
 using gbAlgorithms;
 
 List<Lesson> lessons = new List<Lesson>();
-Lesson lesson1 = new Lesson1();
-Lesson lesson2 = new Lesson2();
-lessons.Add(lesson1);
-lessons.Add(lesson2);
+lessons.Add(new Lesson1());
+lessons.Add(new Lesson2());
+lessons.Add(new Lesson3());
 
 while (true)
 {

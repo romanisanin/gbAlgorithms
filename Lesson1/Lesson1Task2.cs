@@ -14,7 +14,7 @@ namespace gbAlgorithms
         public int Number { get; set; }
         public Lesson1Task2()
         {
-            Description = "Task2. Find Fibonacci number";
+            Description = "Task 2. Find Fibonacci number";
             Number = 0;
         }
 

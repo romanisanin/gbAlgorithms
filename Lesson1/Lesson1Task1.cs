@@ -14,7 +14,7 @@ namespace gbAlgorithms
         public int Number { get; set; }
         public Lesson1Task1()
         {
-            Description = "Task1. Check if the number is prime";
+            Description = "Task 1. Check if the number is prime";
             Number = 0;
         }
         private bool IsPrime(int number)
