@@ -6,13 +6,14 @@ List<Lesson> lessons = new List<Lesson>();
 lessons.Add(new Lesson1());
 lessons.Add(new Lesson2());
 lessons.Add(new Lesson3());
+lessons.Add(new Lesson4());
 
 while (true)
 {
-    getTasksMenu(getLessonMenu());
+    GetTasksMenu(GetLessonMenu());
 }
 
-int getLessonMenu()
+int GetLessonMenu()
 {
     while (true)
     {
@@ -42,7 +43,7 @@ int getLessonMenu()
     }
 }
 
-int getTasksMenu(int lessonNumber)
+int GetTasksMenu(int lessonNumber)
 {
     Console.Clear();
     Console.WriteLine("Tasks List:");

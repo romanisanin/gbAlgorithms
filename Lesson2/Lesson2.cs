@@ -13,7 +13,7 @@ namespace gbAlgorithms
         public Lesson2()
         {
             Description = "Lesson 2. Array, List, Search";
-            Tasks = new List<Task>();
+            Tasks = new List<ITask>();
 
             Tasks.Add(Task1);
         }
@@ -79,7 +79,7 @@ namespace gbAlgorithms
             }
 
             Console.WriteLine("Press any button to return to the main menu.");
-            System.Console.ReadKey();
+            Console.ReadKey();
 
         }
     }

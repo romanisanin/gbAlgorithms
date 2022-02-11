@@ -13,7 +13,7 @@ namespace gbAlgorithms
         public Lesson3()
         {
             Description = "Lesson 3. Class, Structure, Distance";
-            Tasks = new List<Task>();
+            Tasks = new List<ITask>();
 
             Tasks.Add(Task1);
         }
@@ -33,7 +33,7 @@ namespace gbAlgorithms
             }
 
             Console.WriteLine("Press any button to return to the main menu.");
-            System.Console.ReadKey();
+            Console.ReadKey();
 
         }
     }

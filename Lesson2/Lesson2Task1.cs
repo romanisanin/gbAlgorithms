@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace gbAlgorithms
 {
-    public class Lesson2Task1 : Task, ILinkedList
+    public class Lesson2Task1 : ITask, ILinkedList
     {
         public Node head { get; set; }
+        public string Description { get; }
+
 
         public Lesson2Task1()
         {

@@ -10,8 +10,10 @@ namespace gbAlgorithms
     /// <summary>
     /// Measures execution time of Class and Struct Points methods on arrays of different sizes.
     /// </summary>
-    internal class Lesson3Task1 : Task
+    internal class Lesson3Task1 : ITask
     {
+        public string Description { get; }
+
         public Lesson3Task1()
         {
             Description = "Task 1. Distance";
