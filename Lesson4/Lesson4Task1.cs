@@ -14,14 +14,9 @@ namespace gbAlgorithms
     {
         public TreeNode Root { get; set; }
 
-        public string Description { get; }
+        public string Description => "Task 1. Binary Tree. Insert, remove, search, print.";
 
         static readonly int count = 10;
-
-        public Lesson4Task1()
-        {
-            Description = "Task 1. Binary Tree. Insert, remove, search, print.";
-        }
 
         /// <summary>
         /// Add Tree Node
@@ -36,6 +31,7 @@ namespace gbAlgorithms
                 Root = newTreeNode;
                 return;
             }
+
             InsertRec(Root, newTreeNode);
         }
 
@@ -62,6 +58,7 @@ namespace gbAlgorithms
         {
             if (root?.Value == value)
                 return root;
+
             if (root != null)
             {
 
@@ -86,6 +83,46 @@ namespace gbAlgorithms
         {
             PrintTreeUtil(Root, 0);
         }
+        /// <summary>
+        /// Breadth-First Search
+        /// </summary>
+        public void BFS ()
+        {
+            Console.WriteLine("Breadth-First Search:");
+            Queue<TreeNode> q = new Queue<TreeNode>();
+            q.Enqueue(Root);
+            while (q.Count > 0)
+            {
+                TreeNode current = q.Dequeue();
+                if (current == null)
+                    continue;
+                q.Enqueue(current.LeftChild);
+                q.Enqueue(current.RightChild);
+
+                Console.Write(current.Value + " ");
+            }
+            Console.WriteLine("\n");
+        }
+
+        /// <summary>
+        /// Deep-First Search
+        /// </summary>
+        public void DFS()
+        {
+            Console.WriteLine("Deep-First Search:");
+            DFSUtil(Root);
+            Console.WriteLine("\n");
+        }
+
+        private void DFSUtil(TreeNode root)
+        {
+            if (root != null)
+            {
+                Console.Write(root.Value+ " ");
+                DFSUtil(root.LeftChild);
+                DFSUtil(root.RightChild);
+            }
+        }
 
         private void PrintTreeUtil(TreeNode root, int space)
         {
@@ -95,9 +132,12 @@ namespace gbAlgorithms
 
             PrintTreeUtil(root.RightChild, space);
             Console.Write("\n");
+
             for (int i = count; i < space; i++)
                 Console.Write(" ");
+
             Console.Write(root.Value + "\n");
+
             PrintTreeUtil(root.LeftChild, space);
         }
         private void InsertRec(TreeNode root, TreeNode newTreeNode)
@@ -124,6 +164,7 @@ namespace gbAlgorithms
             {
                 root = null;
             }
+
             if (root != null)
             {
                 if (value < root.Value)
@@ -137,7 +178,6 @@ namespace gbAlgorithms
             }
 
             return root;
-
         }
     }
 }

@@ -24,14 +24,28 @@ namespace gbAlgorithms
             switch (taskNumber)
             {
                 case 0:
-                    Task1.AddItem(4);
-                    Task1.AddItem(2);
+                    Task1.AddItem(25);
+                    Task1.AddItem(20);
+                    Task1.AddItem(10);
+                    Task1.AddItem(22);
                     Task1.AddItem(5);
+                    Task1.AddItem(12);
                     Task1.AddItem(1);
                     Task1.AddItem(8);
-                    Task1.AddItem(6);
-                    Task1.AddItem(3);
+                    Task1.AddItem(15);
+                    Task1.AddItem(36);
+                    Task1.AddItem(30);
+                    Task1.AddItem(40);
+                    Task1.AddItem(28);
+                    Task1.AddItem(38);
+                    Task1.AddItem(48);
+                    Task1.AddItem(45);
+                    Task1.AddItem(50);
                     Task1.PrintTree();
+                    Console.WriteLine("_____________________________________________");
+                    Task1.BFS();
+                    Console.WriteLine("_____________________________________________");
+                    Task1.DFS();
                     Console.WriteLine("_____________________________________________");
                     var foundNode = Task1.GetNodeByValue(15);
                     Console.WriteLine($"Searched number = 15. Found: {foundNode?.Value ?? 0}");
@@ -46,7 +60,7 @@ namespace gbAlgorithms
                     Task1.RemoveItem(5);
                     Task1.PrintTree();
                     Console.WriteLine("_____________________________________________");
-                    Console.WriteLine("Removing 10");
+                    Console.WriteLine("Removing 51");
                     Task1.RemoveItem(5);
                     Task1.PrintTree();
                     break;

@@ -12,12 +12,8 @@ namespace gbAlgorithms
     /// </summary>
     internal class Lesson3Task1 : ITask
     {
-        public string Description { get; }
+        public string Description => "Task 1. Distance";
 
-        public Lesson3Task1()
-        {
-            Description = "Task 1. Distance";
-        }
         /// <summary>
         /// Creates array of points of PointClassDouble
         /// </summary>

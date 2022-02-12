@@ -12,12 +12,7 @@ namespace gbAlgorithms
     public class Lesson1Task2 : ITask
     {
         public int Number { get; set; } 
-        public string Description { get;}
-
-        public Lesson1Task2()
-        {
-            Description = "Task 2. Find Fibonacci number";
-        }
+        public string Description => "Task 2. Find Fibonacci number";
 
         public int GetFibonacciRec(int number)
         {

@@ -12,12 +12,8 @@ namespace gbAlgorithms
     internal class Lesson1Task1 : ITask
     {
         public int Number { get; set; }
-        public string Description { get;}
+        public string Description => "Task 1. Check if the number is prime";
 
-        public Lesson1Task1()
-        {
-            Description = "Task 1. Check if the number is prime";
-        }
         private bool IsPrime(int number)
         {
             Number = number;
