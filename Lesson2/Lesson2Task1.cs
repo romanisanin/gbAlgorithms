@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace gbAlgorithms
 {
-    public class Lesson2Task1 : Task, ILinkedList
+    public class Lesson2Task1 : ITask, ILinkedList
     {
         public Node head { get; set; }
-
-        public Lesson2Task1()
-        {
-            Description = "Task 1. Doubly Linked List";
-        }
+        public string Description => "Task 1. Doubly Linked List";
 
         public void PrintLinkedList()
         {

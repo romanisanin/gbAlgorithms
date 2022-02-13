@@ -8,11 +8,11 @@ namespace gbAlgorithms
 {
     public class Lesson
     {
-        public List<Task> Tasks;
+        public List<ITask> Tasks;
         public string Description { get; set; }
         public Lesson()
         {
-            Tasks = new List<Task>();
+            Tasks = new List<ITask>();
         }
 
         public void TasksMenu()

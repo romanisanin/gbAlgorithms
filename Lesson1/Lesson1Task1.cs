@@ -9,14 +9,11 @@ namespace gbAlgorithms
     /// <summary>
     /// Check if the number is prime
     /// </summary>
-    internal class Lesson1Task1 : Task
+    internal class Lesson1Task1 : ITask
     {
         public int Number { get; set; }
-        public Lesson1Task1()
-        {
-            Description = "Task 1. Check if the number is prime";
-            Number = 0;
-        }
+        public string Description => "Task 1. Check if the number is prime";
+
         private bool IsPrime(int number)
         {
             Number = number;

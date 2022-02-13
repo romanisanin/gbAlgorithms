@@ -13,7 +13,7 @@ namespace gbAlgorithms
         public Lesson1()
         {
             Description = "Lesson 1. Block diagrams, asymptotic complexity, recursion";
-            Tasks = new List<Task>();
+            Tasks = new List<ITask>();
 
             Tasks.Add(Task1);
             Tasks.Add(Task2);
@@ -40,7 +40,7 @@ namespace gbAlgorithms
             }
 
             Console.WriteLine("Press any button to return to the main menu.");
-            System.Console.ReadKey();
+            Console.ReadKey();
 
         }
     }
