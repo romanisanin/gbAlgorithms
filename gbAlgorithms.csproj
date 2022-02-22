@@ -7,4 +7,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LessonsInterface\LessonsInterface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LessonsInterface">
+      <HintPath>LessonsInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="LessonsLibrary">
+      <HintPath>LessonsLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
