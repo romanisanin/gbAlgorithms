@@ -1,12 +1,25 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿using System.Reflection;
 using gbAlgorithms;
 
+Assembly asm = Assembly.LoadFrom("LessonsLibrary.dll");
+
+Type type = asm.GetType("gbAlgorithms.Lesson1");
+object Lesson1 = Activator.CreateInstance(type);
+
+type = asm.GetType("gbAlgorithms.Lesson2");
+object Lesson2 = Activator.CreateInstance(type);
+
+type = asm.GetType("gbAlgorithms.Lesson3");
+object Lesson3 = Activator.CreateInstance(type);
+
+type = asm.GetType("gbAlgorithms.Lesson4");
+object Lesson4 = Activator.CreateInstance(type);
+
 List<Lesson> lessons = new List<Lesson>();
-lessons.Add(new Lesson1());
-lessons.Add(new Lesson2());
-lessons.Add(new Lesson3());
-lessons.Add(new Lesson4());
+lessons.Add((Lesson)Lesson1);
+lessons.Add((Lesson)Lesson2);
+lessons.Add((Lesson)Lesson3);
+lessons.Add((Lesson)Lesson4);
 
 while (true)
 {
