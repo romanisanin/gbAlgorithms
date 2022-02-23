@@ -15,11 +15,15 @@ object Lesson3 = Activator.CreateInstance(type);
 type = asm.GetType("gbAlgorithms.Lesson4");
 object Lesson4 = Activator.CreateInstance(type);
 
+type = asm.GetType("gbAlgorithms.Lesson7");
+object Lesson7 = Activator.CreateInstance(type);
+
 List<Lesson> lessons = new List<Lesson>();
 lessons.Add((Lesson)Lesson1);
 lessons.Add((Lesson)Lesson2);
 lessons.Add((Lesson)Lesson3);
 lessons.Add((Lesson)Lesson4);
+lessons.Add((Lesson)Lesson7);
 
 while (true)
 {
